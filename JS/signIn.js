@@ -28,12 +28,12 @@ signInBtn.addEventListener("click", (e) => {
           // save admin to check in the main page
           localStorage.clear();
           localStorage.setItem("admin", JSON.stringify(user));
-          window.location.href = "/index.html";
+          window.location.href = "/";
         } else {
           // Save User Info so that we can use it in other pages
           localStorage.clear();
           localStorage.setItem("user", JSON.stringify(user));
-          window.location.href = "/index.html";
+          window.location.href = "/";
         }
       })
       .catch((err) => {
