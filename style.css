@@ -112,3 +112,6 @@ li {
 footer {
   background-color: var(--secondary) !important;
 }
+#best-seller {
+  color: var(--accsent) !important;
+}
