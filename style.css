@@ -1,0 +1,114 @@
+:root {
+  font-family: "Poppins", sans-serif !important;
+  --primary: #f7f3ed;
+  --secondary: #f1c98e;
+  --text: #241805;
+  --accsent: #de901b;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif !important;
+}
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+body {
+  background-color: #000000 !important;
+}
+.nav-bar {
+  background-color: var(--primary) !important;
+}
+.navbarContainer {
+  background-color: var(--primary) !important;
+}
+li {
+  font-weight: 500;
+}
+
+#header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80vh;
+}
+
+.img-mask {
+  width: 50%;
+  height: 100%;
+  background-image: url(./assets/image/header-background.jpg);
+  background-position: center;
+  background-size: cover;
+  -webkit-mask-image: linear-gradient(to left, black, transparent);
+  mask-image: linear-gradient(to left, black, transparent);
+}
+.header-left {
+  width: 50% !important;
+}
+#best-seller-cover {
+  width: 250px;
+  max-height: 400px;
+}
+.best-seller-text {
+  color: white !important;
+}
+@media (max-width: 1023px) {
+  .img-mask {
+    display: none;
+  }
+  #header {
+    height: auto !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(./assets/image/header-background.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  .header-left {
+    width: 100% !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+    padding: 30px;
+  }
+  #best-seller-cover {
+    height: 90%;
+    margin-bottom: 15px;
+  }
+}
+#best-seller-name {
+  font-weight: 800;
+}
+#logo {
+  width: 100px;
+}
+.card-container {
+  background-color: var(--primary);
+}
+.card-title {
+  color: #de901b !important;
+}
+
+.card-body {
+  min-height: 450px !important;
+}
+
+.bookCard-img {
+  object-fit: cover !important;
+  object-position: center !important;
+
+  height: 400px !important;
+}
+#signInBtn,
+#signUpBtn {
+  background-color: #e3d2c0 !important;
+}
+.singUpLink {
+  color: var(--accsent) !important;
+}
+footer {
+  background-color: var(--secondary) !important;
+}
